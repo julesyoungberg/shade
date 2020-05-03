@@ -1,10 +1,10 @@
 import dat from 'dat.gui'
 import p5 from 'p5'
 
-const shaders = ['basic', 'black', 'triangle', 'white']
+const shaders = ['basic', 'step', 'imprint']
 
 const state = {
-    shader: 'basic',
+    shader: 'imprint',
 }
 
 window.onload = function() {
@@ -38,7 +38,10 @@ const sketch = p => {
 
         shader.setUniform('u_resolution', [p.width, p.height])
         shader.setUniform('u_time', p.millis() / 1000.0)
-        shader.setUniform('u_mouse', [p.mouseX, p.map(p.mouseY, 0, p.height, p.height, 0)])
+        shader.setUniform('u_mouse', [
+            p.mouseX / p.width,
+            p.map(p.mouseY, 0, p.height, p.height, 0) / p.height
+        ])
 
         p.rect(0, 0, p.width, p.height)
     }
