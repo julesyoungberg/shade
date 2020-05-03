@@ -83,5 +83,5 @@ void main() {
     // pos = rotateTilePattern(pos * 2.);
     // pos = rotate2D(pos, PI * u_time * 0.25);
 
-	gl_FragColor = vec4(vec3(step(pos.x, pos.y)), 1.0);
+    gl_FragColor = vec4(vec3(step(pos.x, pos.y)), 1.0);
 }

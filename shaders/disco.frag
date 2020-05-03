@@ -56,7 +56,7 @@ void main() {
     float rot = smoothstep(0.0, 0.5, timeFract) - smoothstep(0.5, 1.0, timeFract);
     pos = rotate2D(pos, rot * PI + PI * 0.25);
 
-    pos = scale(pos, sin(u_time) * 0.5 + 1.4);
+    pos = scale(pos, sin(u_time) * 0.5 + 1.5);
     
     color = vec3(box(pos, vec2(0.7), 0.01));
     
