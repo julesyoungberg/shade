@@ -46,7 +46,7 @@ float box(vec2 st, vec2 size, float smoothEdges) {
 }
 
 void main() {
-	vec3 color = vec3(0.0);
+    vec3 color = vec3(0.0);
 
     float tiling = 10.0;
     vec2 pos = tile(st, tiling);
