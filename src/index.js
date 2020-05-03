@@ -1,16 +1,15 @@
 import dat from 'dat.gui'
 import p5 from 'p5'
 
-const shaders = ['shader']
+const shaders = ['basic', 'black', 'triangle', 'white']
 
-// store current selected shader
-// const state = {
-//     shader: 'shader',
-// }
+const state = {
+    shader: 'basic',
+}
 
 window.onload = function() {
     const gui = new dat.GUI()
-    // shader drop down
+    gui.add(state, 'shader', shaders)
 }
 
 function getCanvasSize(p) {
@@ -18,10 +17,12 @@ function getCanvasSize(p) {
 }
 
 const sketch = p => {
-    let shader
+    const loadedShaders = {}
 
     p.preload = () => {
-        shader = p.loadShader('./shaders/shader.vert', './shaders/shader.frag')
+        shaders.forEach(shader => {
+            loadedShaders[shader] = p.loadShader('./shaders/shader.vert', `./shaders/${shader}.frag`)
+        })
     }
 
     p.setup = () => {
@@ -31,11 +32,13 @@ const sketch = p => {
     }
 
     p.draw = () => {
+        const shader = loadedShaders[state.shader]
+
         p.shader(shader)
 
-        shader.setUniform("u_resolution", [p.width, p.height]);
-        shader.setUniform("u_time", p.millis() / 1000.0);
-        shader.setUniform("u_mouse", [p.mouseX, p.map(p.mouseY, 0, p.height, p.height, 0)]);
+        shader.setUniform('u_resolution', [p.width, p.height])
+        shader.setUniform('u_time', p.millis() / 1000.0)
+        shader.setUniform('u_mouse', [p.mouseX, p.map(p.mouseY, 0, p.height, p.height, 0)])
 
         p.rect(0, 0, p.width, p.height)
     }
