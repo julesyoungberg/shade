@@ -36,7 +36,7 @@ void main() {
 
     // get background circle color
     float tiling1 = 10.0;
-    vec2 grid1 = tile(st + u_mouse * .018, tiling1);
+    vec2 grid1 = tile(st + u_mouse * .01, tiling1);
     vec2 tilePos1 = tilePos(st, tiling1);
     grid1.y = fract(grid1.y + (mod(tilePos1.x, 2.0) * 2.0 - 1.0) * u_time * 0.25);
     color += mix(blue, baige, circle(grid1, 0.4) - circle(grid1, 0.02));
