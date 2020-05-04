@@ -9,6 +9,7 @@ const shaders = [
     'truchet2',
     'truchet3',
     'waves',
+    'waves2'
 ]
 
 const state = {
