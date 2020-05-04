@@ -1,9 +1,10 @@
 const loadedShaders = {}
 const shaders = [
     'disco',
+    'flower',
     'imprint',
     'pokadots',
-    'flower',
+    'sunbeam',
     'truchet1',
     'truchet2',
     'truchet3',
