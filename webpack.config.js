@@ -25,10 +25,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'src/index.html',
+            inject: false,
         }),
     ],
-    watch: true,
-    watchOptions: {
-        ignored: /node_modules/,
-    },
 }
