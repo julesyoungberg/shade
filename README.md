@@ -8,3 +8,4 @@ Experiments with GLSL shaders, inspired by The Book of Shaders.
 Pieces using these shaders with painted and drawn images.
 
 - [Jazz Hands](https://rickyfitts.github.io/shade/collabs/jazz-hands/)
+- [Flower Power](https://rickyfitts.github.io/shade/collabs/flower-power/)
