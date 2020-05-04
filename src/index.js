@@ -1,10 +1,10 @@
 import dat from 'dat.gui'
 import p5 from 'p5'
 
-const shaders = ['basic', 'step', 'imprint', 'disco', 'truchet', 'pokadots']
+const shaders = ['basic', 'imprint', 'disco', 'truchet', 'pokadots', 'flower']
 
 const state = {
-    shader: 'pokadots',
+    shader: 'flower',
 }
 
 window.onload = function() {
