@@ -9,3 +9,4 @@ Pieces using these shaders with painted and drawn images.
 
 - [Jazz Hands](https://rickyfitts.github.io/shade/collabs/jazz-hands/)
 - [Flower Power](https://rickyfitts.github.io/shade/collabs/flower-power/)
+- [Crazy Gator](https://rickyfitts.github.io/shade/collabs/crazy-gator/)

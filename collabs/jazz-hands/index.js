@@ -3,7 +3,7 @@ let img, mandala, shdr, shaderTexture
 function preload() {
     img = loadImage('./images/mask.png')
     mandala = loadImage('./images/mandala.png')
-    shdr = loadShader('./shaders/shader.vert', './shaders/shader.frag')
+    shdr = loadShader('./shaders/shader.vert', './shaders/truchet3.frag')
 }
 
 function setup() {
