@@ -1,7 +1,15 @@
 import dat from 'dat.gui'
 import p5 from 'p5'
 
-const shaders = ['disco', 'imprint', 'truchet', 'pokadots', 'flower']
+const shaders = [
+    'disco',
+    'imprint',
+    'pokadots',
+    'flower',
+    'truchet1',
+    'truchet2',
+    'truchet3',
+]
 
 const state = {
     shader: 'disco',
