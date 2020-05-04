@@ -3,7 +3,7 @@ let mask, sunbeam, waves
 function preload() {
     mask = loadImage('./images/mask.png')
     sunbeam = loadShader('./shaders/shader.vert', './shaders/sunbeam.frag')
-    waves = loadShader('./shaders/shader.vert', './shaders/waves.frag')
+    waves = loadShader('./shaders/shader.vert', './shaders/waves1.frag')
 }
 
 function setup() {
