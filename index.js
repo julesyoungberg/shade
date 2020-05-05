@@ -3,6 +3,7 @@ const shaders = [
     'disco',
     'flower',
     'imprint',
+    'optical',
     'pokadots',
     'sunbeam',
     'truchet1',

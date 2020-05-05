@@ -60,7 +60,7 @@ void main() {
     vec2 circlePos = tile(st, circleTiling);
     
     // align circle with wave
-    circlePos = fract(circlePos + vec2(-0.25, 0.5));
+    circlePos = fract(circlePos + vec2(-0.27, 0.5));
 
     // move with waves - unfortunate magic number here
     circlePos.x = fract(circlePos.x + u_time * 1.91);
