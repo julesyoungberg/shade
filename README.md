@@ -11,5 +11,6 @@ Pieces using these shaders with painted and drawn images.
 - [Disco Shroom](https://rickyfitts.github.io/shade/collabs/disco-shroom/)
 - [Flower Power](https://rickyfitts.github.io/shade/collabs/flower-power/)
 - [Jazz Hands](https://rickyfitts.github.io/shade/collabs/jazz-hands/)
+- [Moo](https://rickyfitts.github.io/shade/collabs/moo/)
 - [Wavelength](https://rickyfitts.github.io/shade/collabs/wavelength/)
 - [What a Trip](https://rickyfitts.github.io/shade/collabs/what-a-trip/)
