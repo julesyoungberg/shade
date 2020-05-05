@@ -12,3 +12,4 @@ Pieces using these shaders with painted and drawn images.
 - [Flower Power](https://rickyfitts.github.io/shade/collabs/flower-power/)
 - [Jazz Hands](https://rickyfitts.github.io/shade/collabs/jazz-hands/)
 - [Wavelength](https://rickyfitts.github.io/shade/collabs/wavelength/)
+- [What a Trip](https://rickyfitts.github.io/shade/collabs/what-a-trip/)
