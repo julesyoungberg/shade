@@ -3,6 +3,7 @@ const shaders = [
     'disco',
     'flower',
     'imprint',
+    'oct',
     'optical',
     'pokadots',
     'sunbeam',
@@ -15,7 +16,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'disco',
+    shader: 'oct',
 }
 
 window.onload = function() {
