@@ -14,4 +14,5 @@ Pieces using these shaders with painted and drawn images.
 - [Monkey Business](https://rickyfitts.github.io/shade/collabs/monkey-business/)
 - [Moo](https://rickyfitts.github.io/shade/collabs/moo/)
 - [Wavelength](https://rickyfitts.github.io/shade/collabs/wavelength/)
+- [White Rabbit](https://rickyfitts.github.io/shade/collabs/white-rabbit/)
 - [What a Trip](https://rickyfitts.github.io/shade/collabs/what-a-trip/)
