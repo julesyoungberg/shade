@@ -6,6 +6,7 @@ const shaders = [
     'oct',
     'optical',
     'pokadots',
+    'rooms',
     'sunbeam',
     'truchet1',
     'truchet2',
