@@ -17,7 +17,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'truchet4',
+    shader: 'disco',
 }
 
 window.onload = function() {
