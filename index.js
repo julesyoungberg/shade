@@ -10,13 +10,14 @@ const shaders = [
     'truchet1',
     'truchet2',
     'truchet3',
+    'truchet4',
     'waves1',
     'waves2',
     'waves3',
 ]
 
 const state = {
-    shader: 'oct',
+    shader: 'truchet4',
 }
 
 window.onload = function() {
