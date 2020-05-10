@@ -2,6 +2,8 @@
 precision highp float;
 #endif
 
+varying vec2 st;
+
 uniform vec2 u_mouse;
 uniform float u_time;
 uniform vec2 u_resolution;
@@ -27,12 +29,13 @@ vec2 truchetPattern(in vec2 _st, in float _index){
 }
 
 void main() {
-    vec2 st = gl_FragCoord.xy / u_resolution.xy;
+    vec2 uv = st;
+
     // Set the lens radius
 	float lens_radius = 0.2;
 
 	// Calculate the direction to the mouse position and the distance
-	vec2 mouse_direction = u_mouse * 2.0 - st; // idk why 2 is needed here but it is
+	vec2 mouse_direction = u_mouse - st;
 	float mouse_distance = length(mouse_direction);
 
     if (mouse_distance < lens_radius) {
@@ -41,15 +44,15 @@ void main() {
 		vec2 offset = (1.0 - pow(mouse_distance / lens_radius, exp)) * mouse_direction;
 
 		// Get the pixel color at the offset position
-		st += offset;
+		uv += offset;
 	}
 
-    st *= 10.0;
+    uv *= 10.0;
     // st = (st - vec2(5.0)) * (abs(sin(u_time * 0.2)) * 5.);
-    st.x += u_time * 3.0;
+    uv.x += u_time * 3.0;
 
-    vec2 ipos = floor(st);  // integer
-    vec2 fpos = fract(st);  // fraction
+    vec2 ipos = floor(uv);  // integer
+    vec2 fpos = fract(uv);  // fraction
 
     vec2 tile = truchetPattern(fpos, random( ipos ));
 

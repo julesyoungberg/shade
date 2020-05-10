@@ -7,6 +7,7 @@ const shaders = [
     'oct',
     'optical',
     'pokadots',
+    'random',
     'rooms',
     'sunbeam',
     'truchet1',
@@ -19,7 +20,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'disco',
+    shader: 'random',
 }
 
 window.onload = function() {
