@@ -20,7 +20,7 @@ void main() {
 
     pos *= vec2(random(vec2(floor(pos.y)) + vec2(3.399, 10.223)) * 100.0, 1.0);
 
-    pos.x += u_time * 10.0 * random(vec2(floor(pos.y)));
+    pos.x += u_time * (random(vec2(floor(pos.y))) * 20.0 - 10.0);
 
     vec2 ipos = floor(pos);  // integer
     vec2 fpos = fract(pos);  // fraction
