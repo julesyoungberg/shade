@@ -64,6 +64,15 @@ void main() {
                 );
 
                 color *= circleOutline(pos, radius, c2);
+
+                for (float l = 0.0; l < 6.0; l++) {
+                    vec2 c3 = c2 + vec2(
+                        radius * cos(PI / 3.0 * l),
+                        radius * sin(PI / 3.0 * l)
+                    );
+
+                    color *= circleOutline(pos, radius, c3);
+                }
             }
         }
     }
