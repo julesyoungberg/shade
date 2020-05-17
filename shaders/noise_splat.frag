@@ -21,10 +21,10 @@ vec2 tilePos(vec2 st, vec2 tiling) {
 }
 
 // generic matrix transformation algorithm
-vec2 transform(vec2 st, mat2 matrix) {
-    vec2 pos = st - 0.5;
-    pos = matrix * pos;
-    return pos + 0.5;
+vec2 transform(in vec2 st, mat2 matrix) {
+    st -= 0.5;
+    st = matrix * st;
+    return st + 0.5;
 }
 
 vec2 rotate2D(vec2 st, float angle) {
@@ -56,12 +56,11 @@ void main() {
     float scale = 4.0;
     float shift = u_time * 0.5;
     float rotation = noise(st * scale + shift) * PI;
-    vec2 pos = rotate2D(st, rotation);
+    vec2 pos = rotate2D(st.yx, rotation);
 
-    vec2 tiling = vec2(1.0, 60.0);
-    vec2 tilePos = tilePos(pos, tiling);
+    vec3 color = vec3(1.0);
+    color -= smoothstep(.15,.2,noise(pos * 10.)); // Black splatter
+    color += smoothstep(.35,.4,noise(pos * 10.)); // Holes on splatter
 
-    float shade = mod(tilePos.y, 2.0);
-
-	gl_FragColor = vec4(vec3(shade), 1.0);
+	gl_FragColor = vec4(color, 1.0);
 }

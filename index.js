@@ -4,6 +4,8 @@ const shaders = [
     'flower',
     'imprint',
     'maze',
+    'noise_splat',
+    'noise_wood',
     'oct',
     'optical',
     'pokadots',
@@ -18,7 +20,6 @@ const shaders = [
     'waves1',
     'waves2',
     'waves3',
-    'wood',
 ]
 
 const state = {
