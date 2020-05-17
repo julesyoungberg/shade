@@ -18,6 +18,7 @@ const shaders = [
     'waves1',
     'waves2',
     'waves3',
+    'wood',
 ]
 
 const state = {
