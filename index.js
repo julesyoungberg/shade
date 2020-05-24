@@ -23,7 +23,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'disco',
+    shader: 'noise_wood',
 }
 
 window.onload = function() {
