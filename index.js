@@ -1,5 +1,7 @@
 const loadedShaders = {}
 const shaders = [
+    'circle_mod1',
+    'circle_mod2',
     'disco',
     'flower',
     'imprint',
@@ -8,6 +10,7 @@ const shaders = [
     'noise_wood',
     'oct',
     'optical',
+    'particle_noise',
     'pokadots',
     'random',
     'rooms',
@@ -23,7 +26,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'noise_wood',
+    shader: 'particle_noise',
 }
 
 window.onload = function() {
