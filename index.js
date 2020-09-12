@@ -14,6 +14,7 @@ const shaders = [
     'random',
     'rooms',
     'rothko',
+    'smoke',
     'truchet1',
     'truchet2',
     'truchet3',
@@ -23,7 +24,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'particle_noise',
+    shader: 'smoke',
 }
 
 window.onload = function() {
