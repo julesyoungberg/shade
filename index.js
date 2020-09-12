@@ -3,7 +3,6 @@ const shaders = [
     'circle_mod1',
     'circle_mod2',
     'disco',
-    'flower',
     'imprint',
     'maze',
     'noise_splat',
@@ -15,14 +14,12 @@ const shaders = [
     'random',
     'rooms',
     'rothko',
-    'sunbeam',
     'truchet1',
     'truchet2',
     'truchet3',
     'truchet4',
     'waves1',
     'waves2',
-    'waves3',
 ]
 
 const state = {
