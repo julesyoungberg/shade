@@ -1,10 +1,13 @@
 const loadedShaders = {}
 const shaders = [
+    'cellular_noise',
+    'cellular_pulse',
     'circle_mod1',
     'circle_mod2',
     'disco',
     'imprint',
     'maze',
+    'metaballs',
     'noise_splat',
     'noise_wood',
     'oct',
@@ -24,7 +27,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'smoke',
+    shader: 'cellular_pulse',
 }
 
 window.onload = function() {
