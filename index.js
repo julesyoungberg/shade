@@ -5,6 +5,8 @@ const shaders = [
     'circle_mod1',
     'circle_mod2',
     'disco',
+    'fractal_noise1',
+    'fractal_noise2',
     'imprint',
     'maze',
     'metaballs',
@@ -27,7 +29,7 @@ const shaders = [
 ]
 
 const state = {
-    shader: 'cellular_pulse',
+    shader: 'fractal_noise2',
 }
 
 window.onload = function() {
